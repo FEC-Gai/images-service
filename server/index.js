@@ -53,9 +53,9 @@ app.get('/images/:roomId', (req, res) => {
 
 
 
-app.listen(port, () => {
-  console.log(`listening on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`listening on port ${port}`);
+// });
 
 //for testing instead of listen above:
-//module.exports = app;
+module.exports = app;
