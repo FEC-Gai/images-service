@@ -22,4 +22,3 @@ For Express server run: `npm start`.
 
 ### Client
 For Webpack run: `npm run build`.
-For Webpack-Dev-Server run: `npm run dev`. 
