@@ -2,20 +2,10 @@ import React from 'react';
 const faker = require('faker');
 import { Container, OuterContainer, DescriptionContainer, DescriptionList, LeftContainer, ReviewsContainer, DescriptionListItem, StarSvg, Rating, ReviewCount, SuperhostContainer, SuperHostSvg, SuperHostText, Location, RightContainer, ShareContainer, ShareSvg, ShareText, SaveContainer, HeartSvg, SaveText, Dot } from './style.Description.jsx';
 
-
-//const descriptionItems1 = [];
-
-//shareSvg looks weird
 const Description = (props) => {
-  console.log('props in Description: ', props); //isSuperHost, rating, reviewCount, add location or get from Supra's service
-  // if (props.isSuperHost === true) {
-  //   const superHost = 'Superhost';
-  // } else {
-  //   const superHost = '';
-  // }
+  //props -> isSuperHost, rating, reviewCount, add location or get from Supra's service
   const superHost = 'Superhost';
-  const location = faker.lorem.sentence({'word_count': 3}); //not working, putting .  //{location}
-  //if isSuperHost === true return w/SuperHostSvg & superHost, else return otherwise
+  const location = faker.lorem.sentence({'word_count': 3});
   return (
     <Container>
       <OuterContainer>

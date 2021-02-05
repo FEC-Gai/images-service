@@ -3,9 +3,6 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const path = require('path');
-//const cloudinary = require('cloudinary').v2;
-//const streamifier = require('streamifier');
-//const fs = require('fs');
 const db = require('../database/index.js');
 const Images = require('../database/Images.js');
 
@@ -53,9 +50,9 @@ app.get('/images/:roomId', (req, res) => {
 
 
 
-// app.listen(port, () => {
-//   console.log(`listening on port ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`listening on port ${port}`);
+});
 
 //for testing instead of listen above:
-module.exports = app;
+//module.exports = app;

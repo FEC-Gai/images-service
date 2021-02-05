@@ -1,5 +1,4 @@
 import React from 'react';
-//import { Container, OuterContainer, PhotoListContainer } from './style.Slider.jsx';
 import Thumbnail from './Thumbnail.jsx';
 import styled from 'styled-components';
 
@@ -50,13 +49,12 @@ const ShiftedSlider = styled(PhotoList)`
 `;
 
 class Slider extends React.Component {
-  //console.log('props in Slider: ', props); //photos, currentPhoto, transform
+  //props -> photos, currentPhoto, transform
   render() {
     const photoList = this.props.photos;
     const currentPhoto = this.props.currentPhoto;
     const transform = this.props.transform;
     const currentPhotoIndex = photoList.indexOf(currentPhoto);
-    //console.log('🧪 currentPhotoIndex: ', currentPhotoIndex);
     //if currentPhotoIndex is greater than 3, will need extra photos coming into view
     if (currentPhotoIndex > 3) {
       return (

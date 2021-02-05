@@ -5,7 +5,6 @@ const faker = require('faker');
 const dotenv = require('dotenv');
 dotenv.config({ path: path.resolve(__dirname, './.env') });
 
-//save url in variable to make it more simple as it's repeated below
 let getUnsplashRooms = (query, max) => {
   let options = {
     method: 'GET',
@@ -16,7 +15,6 @@ let getUnsplashRooms = (query, max) => {
     .then((response) => {
       //response.data shows total # of results & total pages
       //response.data.results is an array of image objects
-      //console.log('🔶response.data.results length', response.data.results.length);
       return response.data.results;
     })
     .catch((err) => {
@@ -32,9 +30,6 @@ let getUnsplashHosts = (query) => {
 
   return axios(options)
     .then((response) => {
-      //response.data shows total # of results & total pages
-      //response.data.results is an array of image objects
-      //console.log('🔶response.data.results length', response.data.results.length);
       return response.data.results;
     })
     .catch((err) => {
@@ -50,9 +45,6 @@ let getUnsplashReviewers = (query, max) => {
 
   return axios(options)
     .then((response) => {
-      //response.data shows total # of results & total pages
-      //response.data.results is an array of image objects
-      //console.log('🔶response.data.results length', response.data.results.length);
       return response.data.results;
     })
     .catch((err) => {
