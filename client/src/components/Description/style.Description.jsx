@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-
-// Container, OuterContainer, DescriptionContainer, DescriptionList, DescriptionListItem, StarSvg, Rating, ReviewCount, SuperHostSvg, SuperHostText, Location, ShareSvg, ShareText, HeartSvg, SaveText
 export const Container = styled.div`
   background-color: transparent !important;
   color: rgb(255,255,255) !important;
@@ -172,6 +170,3 @@ export const Dot = styled.p`
   font-weight: extra-light;
   margin: 0 9px 0 0;
 `;
-
-// margin: 1em;
-//padding: 0.25em 1em;

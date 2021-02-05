@@ -5,7 +5,6 @@ const { generatePhotos } = require('./helpers/generatePhotos');
 //100 hosts/rooms worth of data
 const insertseedPhotos = async function() {
   let samplePics = await generatePhotos();
-  //console.log('samplePics: ', samplePics);
   Images.insertMany(samplePics)
     .then(() => {
       console.log('successfully seeded db!');

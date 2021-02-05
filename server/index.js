@@ -3,9 +3,6 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const path = require('path');
-//const cloudinary = require('cloudinary').v2;
-//const streamifier = require('streamifier');
-//const fs = require('fs');
 const db = require('../database/index.js');
 const Images = require('../database/Images.js');
 

@@ -31,9 +31,7 @@ class Images extends React.Component {
     this.getPhotosByRoomId(roomId);
   }
 
-  //${serverUrl}
   getPhotosByRoomId(id) {
-    //console.log('id: ', id);
     axios.get(`${serverUrl}/images/${id}`)
       .then((response) => {
         console.log('images data by room id: ', response.data);

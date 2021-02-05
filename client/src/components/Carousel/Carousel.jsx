@@ -4,8 +4,7 @@ import Slider from './Slider.jsx';
 
 class Carousel extends React.Component {
   constructor(props) {
-    super(props);
-    //console.log('props in carousel: ', props); //photos array, clickedPic, handleClick
+    super(props); //photos array, clickedPic, handleClick
     this.state = {
       photos: this.props.photos,
       currentPhoto: this.props.clickedPic,
@@ -21,7 +20,6 @@ class Carousel extends React.Component {
     const nextImagePosition = photos.indexOf({ currentPhoto }.currentPhoto) + 1;
     const nextImage = photos[nextImagePosition];
     let transformed;
-    //console.log('next: ', nextImage);
     if (nextImage !== undefined) {
       transformed = transform - 110;
       //console.log('🇲🇳 1 transformed in Carousel: ', transformed);
